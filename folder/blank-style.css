@@ -1,6 +1,33 @@
-<style>
-        table, th, td{
-          border; 2px solid black; 
-          border-collapse: collapse;
-        }
-      </style>  
+.headline {
+        border: 4px solid Tomato;
+        background-color: Tomato ;
+}
+
+body {
+        front-family: "Lucida Handwriting";
+}
+
+.image-text-box{
+                text aligin: center;
+}
+th, td{
+        border-style: 2px dotted dashed solid double #ddd;
+}
+table {
+        width:100%;
+        text-align:center;
+}
+tr:hover{
+        background-color Tomato; 
+}
+.dog{
+        background-color: black;
+}
+a{
+        color:black;
+}
+#First, #Second, #Third{
+        text-align: center;
+}
+        
+
