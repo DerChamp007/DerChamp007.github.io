@@ -3,26 +3,30 @@
 <head>
 <title> Fake Seite </title>
 <style>
-body {
+  body {
     font-family: Arial, sans-serif;
+    position: relative;
+    text-align: center;
   }
   
-  Bild2 {
-    float: left;
-    margin: 10px;
+  #Bild1 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
   }
-    Bild1 { 
-margin-left: auto;
-margin-right: auto;
-width: 150px;
-}
-    Bild3 {
-        margin-bottom: 20px;
-    }
-  
+
+  #Bild2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  #Bild3 {
+    display: block;
+    margin: 20px auto;
+  }
+
   .disclaimer {
-    clear: both;
-    font-style: italic;
     text-align: center;
     margin-top: 20px;
     color: red;
@@ -30,12 +34,11 @@ width: 150px;
 </style>
 </head>
 <body>
-<img1 src="https://www.google.com/logos/doodles/2023/seasonal-holidays-2023-6753651837110165-6752733080612631-cst.gif" id="Bild1">
-<img2 src="https://biblehrer.github.io/Aufgaben/Grafiken/CornerSymbol.png" id="Bild2">
-<img3 src="https://biblehrer.github.io/Aufgaben/Grafiken/Searchbar.png" id="Bild3">
+  <img src="https://www.google.com/logos/doodles/2023/seasonal-holidays-2023-6753651837110165-6752733080612631-cst.gif" id="Bild1">
+  <img src="https://biblehrer.github.io/Aufgaben/Grafiken/CornerSymbol.png" id="Bild2">
+  <img src="https://biblehrer.github.io/Aufgaben/Grafiken/Searchbar.png" id="Bild3">
 
   <p class="disclaimer">Diese Seite ist rein zu Übungszwecken erstellt und nicht echt.</p>
-
 </body>
 </html>
 
