@@ -15,10 +15,10 @@
         <li><button>Anmelden</button></li>
       </ul>
     </header>
-      <div class="main">
+      <form class="main" id="form">
           <img src="https://www.google.com/logos/doodles/2023/seasonal-holidays-2023-6753651837110165-6752733080612631-cst.gif">
           <div class="searchBox">
-              <input type="text" class="search" id="search">
+              <input type="text" class="search" name="search">
               <div class="icons">
                   <div><img src="search.png"></div>
                   <div><img src="mic.png"></div>
@@ -28,7 +28,7 @@
               <button>Google Suche</button>
               <button>Auf gut Glück!</button>
           </div>
-      </div>
+      </form>
       <div class="footer">
           <div class="row row1">
               <p class="country">Deutschland</p>
@@ -49,9 +49,13 @@
   </section>
   <p class="disclaimer">Diese Seite ist rein zu Übungszwecken erstellt und nicht echt!</p>
 <script>
-    const inp=document.getElementById("search");
-    inp.add
-
+    const form = document.getElementById("form");
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const formData = new FormData(form)
+        if (formData.get("search")){
+        window.location.href = `https://www.google.com/search?q=${formData.get("search")}`;}
+    })
 </script>
 </body>
 </html>
