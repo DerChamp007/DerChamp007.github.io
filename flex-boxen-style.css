@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+}
+#pond {
+    height: 800px;
+    background-color: #1F5768;
+}
+#frogs {
+    height: 400px;
+    margin-top: -800px;
+}
+img {
+    width: 120px;
+    height:120px;
+    display: block;
+}
+.frog {
+    width:120px;
+    height:120px;
+    margin:20px;
+}
