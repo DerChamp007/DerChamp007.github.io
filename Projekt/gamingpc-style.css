@@ -1,12 +1,10 @@
-/* Allgemeines Styling für die gesamte Seite */
 body {
-    background-color: black; /* Hintergrundfarbe */
-    color: white; /* Textfarbe */
-    font-family: "Courier New", Courier, monospace; /* Schriftart */
-    text-align: center; /* Text mittig ausrichten */
+    background-color: black;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
 }
 
-/* Styling für die Navigationsleiste */
 nav {
     background-color: #333;
 }
@@ -32,4 +30,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #111;
+}
+.section{
+    text-align: justify;
 }
