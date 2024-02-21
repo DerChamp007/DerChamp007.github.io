@@ -28,6 +28,19 @@ nav ul li a {
     padding: 10px 20px;
     display: inline-block;
 }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 16px;
+    transition: font-size 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+    font-size: 18px;
+}
 
 nav ul li a:hover {
     background-color: #111;

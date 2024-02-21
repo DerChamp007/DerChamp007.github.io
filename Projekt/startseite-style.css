@@ -1,25 +1,31 @@
-body{
+body {
     background-color: black;
 }
-.container{
+
+.container {
     width: 50%;
     margin: 0 auto;
     text-align: center;
 }
-h1{
+
+h1 {
     font-size: 43px;
     font-family: "Courier New", Courier, monospace;
     color: white;
 }
+
 nav {
+    background-color: #333;
     text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
     display: inline-block;
 }
 
@@ -34,10 +40,13 @@ nav ul li a {
     padding: 14px 16px;
     text-decoration: none;
     font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    transition: font-size 0.3s;
 }
 
 nav ul li a:hover {
     background-color: #111;
+    font-size: 18px;
 }
 
 .dropdown {
@@ -58,6 +67,13 @@ nav ul li a:hover {
     display: block;
     text-align: left;
     text-decoration: none;
+    font-size: 15px;
+    transition: font-size 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #111;
+    font-size: 17px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -66,8 +82,4 @@ nav ul li a:hover {
 
 .dropdown-content a:hover {
     background-color: #111;
-}
-
-nav ul li:hover a {
-    font-size: 20px; /* Beispielgröße, kann angepasst werden */
 }
