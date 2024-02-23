@@ -6,7 +6,15 @@ body {
 }
 
 nav {
+    position: fixed;
+    top: 5%;
+    transform: translateY(-50%);
+    width: 100%;
     background-color: #333;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 nav ul {
@@ -48,4 +56,28 @@ nav ul li a:hover {
 
 .section{
     text-align: justify;
+}
+
+.container {
+    top: 7%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.text, .step {
+    text-align: left;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+img{
+    width: 300px;
+    height: auto;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
