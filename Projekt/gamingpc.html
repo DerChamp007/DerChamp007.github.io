@@ -153,14 +153,44 @@
             <p>Es gibt verschiedene Arten von CPU-Kühlern. Wir empfehlen dir, für den Einbau des Kühlers das mitgelieferte Handbuch zu Hilfe zu nehmen. Dieses enthält eine genaue Anleitung für die Installation des CPU-Kühlers.</p>
             <p>Bei einigen Kühlern wird ein Einbaurahmen benötigt. Auf dem Mainboard kann bereits ein Einbaurahmen vorinstalliert sein. Du musst diesen entfernen, wenn dein CPU-Kühler keinen Einbaurahmen benötigt, oder ihn austauschen, falls für den von dir gewählten Kühler ein anderer Einbaurahmen notwendig ist. Diesen Schritt solltest du ausführen, bevor du das Mainboard in das Gehäuse einsetzt.</p>
             <p>Bei einigen Kühlern ist die Wärmeleitpaste bereits auf dem leitfähigen Material aufgetragen (das auf die CPU aufgesetzt wird) und bei anderen nicht. Sollte sich auf deinem Kühler keine Wärmeleitpaste befinden, musst du diese manuell auftragen, bevor du den Kühler einsetzt. Um die Wärmeleitpaste aufzubringen, drücke eine kleine Menge, die nicht größer als ein Reiskorn sein sollte, in die Mitte der CPU. Platziere den Kühler dann auf der CPU – der Druck verteilt die Wärmeleitpaste angemessen.</p>
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="https://www.intel.de/content/dam/www/central-libraries/us/en/images/2023-01/s9-u05-19-cpu-thermal-paste-application-original-rwd.jpg.rendition.intel.web.1072.603.jpg" alt="Bild 1">
+                        <img src="https://www.intel.de/content/dam/www/central-libraries/us/en/images/2023-01/s9-u05-20-cpu-thermal-paste-application-original-rwd.jpg.rendition.intel.web.1072.603.jpg" alt="Bild 2">
+                        <img src="https://www.intel.de/content/dam/www/central-libraries/us/en/images/2023-01/s9-u05-18a-install-cpu-cooling-original-rwd.jpg.rendition.intel.web.1072.603.jpg" alt="Bild 3">
+                    </div>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
 
-            <h2>SCHRITT 4: Arbeitsspeicher installieren (RAM)</h2>
+
+
+                <h2>SCHRITT 4: Arbeitsspeicher installieren (RAM)</h2>
             <p>Teile/Werkzeug: Mainboard, RAM, Benutzerhandbuch (Mainboard)</p>
             <p>Finde heraus, wie viele Steckplätze für RAM-Module auf deinem Mainboard vorhanden sind (die meisten haben entweder zwei oder vier). Wenn du alle verfügbaren RAM-Steckplätze nutzen möchtest, setze die RAM-Module einfach ein, bis diese einrasten. Solltest du nicht alle RAM-Steckplätze nutzen wollen, suche dir im Benutzerhandbuch die korrekte Konfiguration heraus und setze die Speichermodule an entsprechender Stelle ein.</p>
+                <pi>
+                <div class="image-comparison">
+                    <div class="images-container">
+                        <img class="before-image" src="https://www.intel.de/content/dam/www/central-libraries/us/en/images/2023-01/s9-u05-21-ram-installation-original-rwd.jpg.rendition.intel.web.1920.1080.jpg" alt="">
+                        <img class="after-image" src="https://www.intel.de/content/dam/www/central-libraries/us/en/images/2023-01/s9-u05-22-ram-installation-original-rwd.jpg.rendition.intel.web.1920.1080.jpg" alt="">
 
+                        <div class="slider-line"></div>
+                        <div class="slider-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                            </svg>
+                        </div>
+
+                        <input type="range" class="slider" min="0" max="100">
+                    </div>
+                </div>
+                </pi>
             <h2>SCHRITT 5: (Optional) Führe außerhalb des Gehäuses einen Testlauf durch</h2>
             <p>Teile/Werkzeug: Mainboard mit installierter CPU und CPU-Kühlung, RAM, GPU, Netzteil, Kreuzschlitzschraubendreher, Mainboard-Handbuch, Bildschirm (an die GPU angeschlossen)</p>
             <p>Nachdem du die CPU und den CPU-Kühler installiert hast, möchtest du vielleicht einen schnellen Testlauf durchführen, um sicherzustellen, dass alle installierten Komponenten funktionieren. Dieser Test ist viel einfacher durchzuführen, wenn sich nicht bereits alles im Gehäuse befindet, und Fehler lassen sich so auch leichter beheben. Installiere dazu den Grafikprozessor und schließe alles an das Netzteil an (falls du nicht weißt, wie man den Grafikprozessor installiert, findest du im folgenden Abschnitt eine Anleitung). Vergewissere dich, dass die Stromversorgung mit dem Mainboard und dem Grafikprozessor verbunden ist (sowohl die 8-polige Steckverbindung für die CPU als auch die 24-polige Steckverbindung) und starte den Computer.</p>
+            <p>
+                <img src="https://www.intel.de/content/dam/www/central-libraries/us/en/images/2023-01/s9-u05-23-test-run-outside-case-original-rwd.jpg.rendition.intel.web.1920.1080.jpg" alt="Optional" class="middle">
+            </p>
             <p>Einige High-End-Mainboards haben einen An-/Aus-Schalter, die meisten jedoch nicht. Wenn du keinen Ein-/Ausschalter siehst, solltest du die Pins für den Einschalttaster finden – das sind kleine Kontaktstiftpaare, die aus farbigen Sockeln ragen. Die Pins für den Schalter sind eventuell als „PWR_ON“ oder ähnlich gekennzeichnet. Überbrücke zum Einschalten des Mainboards die beiden Stifte kurzzeitig mit einem Schraubendreher.</p>
             <p>Jetzt solltest du erkennen können, ob alle installierten Komponenten funktionieren oder ob es eine Fehlfunktion gibt. Wenn Lichter am Mainboard aufblinken oder es Piepstöne von sich gibt, gibt es wahrscheinlich einen Grund dafür. Einige Mainboards haben eine zweistellige POST-Code-Anzeige (POST = Power-On Self Test), die dir bei der Identifikation des Problems hilft. Um herauszufinden, was dir angezeigt wird, solltest du im Benutzerhandbuch nachsehen. Falls dein Mainboard keine POST-Code-Anzeige hat, schließe einen Bildschirm an den Grafik/Video-Ausgang an und beobachte, ob dein System den POST durchführt bzw. startet und das Logo des Mainboards anzeigt.</p>
             <p>Wenn du den Testlauf beendest, solltest du das Netzteil ausschalten und warten, bis die LEDs auf dem Mainboard dunkel werden, um sicherzustellen, dass sich keine Restspannung im System befindet. Deinstalliere dann die Grafikkarte und entferne alle Stromversorgungskabel, bevor du mit dem nächsten Schritt fortfährst.</p>
@@ -170,9 +200,14 @@
                 <p>Packe das Netzteil aus bzw. trenne es von den Komponenten, wenn du den Testlauf durchgeführt hast, und lege gegebenenfalls die zugehörigen Kabel bereit (wenn es sich um eine voll- oder teilmodulare Einheit handelt).</p>
                 <p>Sieh dir dein Gehäuse an, um herauszufinden, wo das Netzteil hingehört (wahrscheinlich im unteren Bereich nahe der Rückwand) und wie es ausgerichtet werden muss. Im Idealfall wird das Netzteil so ausgerichtet, dass dessen Lüfter nach außen durch eine Öffnung im Gehäuse zeigt und bläst. Sollte sich die Lüftungsöffnung auf der Unterseite des Gehäuses befinden, kannst du das Netzteil auch anders herum montieren, solange durch die Öffnung im Boden ein ausreichender Luftstrom fließen kann, wenn der PC fertiggestellt ist.</p>
                 <p>Falls das Gehäuse keine Belüftungsöffnungen für das Netzteil bietet, montiere das Netzteil so, dass der Lüfter nach oben zeigt, also in das Gehäuse, und achte darauf, dass ausreichend Platz bleibt.</p>
+                <p>
+                    <img src="https://www.intel.de/content/dam/www/central-libraries/us/en/images/2023-01/s9-u05-24-power-supply-install-original-rwd.jpg.rendition.intel.web.1920.1080.jpg" alt="Install-Power-Supply" class="middle">
+                </p>
                 <p>Befestige das Netzteil mit den vier Schrauben, die im Lieferumfang des Netzteils enthalten sind, am Gehäuse.</p>
                 <p>Wenn du ein nicht modulares oder teilmodulares Netzteil verwendest, ist es jetzt an der Zeit, die fest verbundenen Kabel so durch das Gehäuse zu führen, dass sie am vorgesehenen Endpunkt ankommen. (Nutze, falls vorhanden, die Befestigungsvorrichtungen für Kabel in deinem Gehäuse.)</p>
-
+                <p>
+                    <img src="https://www.intel.de/content/dam/www/central-libraries/us/en/images/2023-01/s9-u05-25-power-supply-install-original-rwd.jpg.rendition.intel.web.1920.1080.jpg" alt="Install-Power-Supply2" class="middle">
+                </p>
                 <h2>SCHRITT 7: Mainboard installieren</h2>
                 <p>Teile/Werkzeug: Gehäuse, Mainboard, I/O-Abschirmung (falls nicht bereits am Mainboard fixiert), Kreuzschlitzschraubendreher PH02, Schrauben, Handbuch des Mainboards</p>
                 <p>Wenn dein Mainboard mit einer nicht angebrachten I/O-Blende geliefert wurde – einem rechteckigen Blech mit Ausschnitten für die Anschlüsse des Mainboards – solltest du sie zuerst auf der Rückseite deines Gehäuses einsetzen und einrasten (achte darauf, dass sie richtig ausgerichtet ist). I/O-Abschirmungen haben meist scharfe Kanten, deshalb sollten du vorsichtig vorgehen.</p>
@@ -184,7 +219,25 @@
                 <p>Teile/Werkzeug: Mainboard, GPU (Grafikkarte), Kreuzschlitzschraubendreher der Größe PH2, Mainboard-Handbuch</p>
                 <p>Finde den PCIe-x16-Steckplatz auf dem Mainboard. Es ist der längste PCIe-Steckplatz und er hat möglicherweise eine andere Farbe als die anderen Steckplätze. Wenn dein Mainboard über mehr als einen PCIe-x16-Steckplatz verfügt, sieh im Handbuch nach, ob einer dieser Steckplätze Vorrang hat. Wenn jeder Steckplatz verwendet werden kann, kannst du je nach Lage der anderen Komponenten entscheiden, welchen du verwenden möchtest. Achte darauf, deinem Grafikprozessor genügend Luft und Platz zu lassen.</p>
                 <p>Abhängig vom Gehäuse musst du möglicherweise I/O-Abdeckungen (kleine Bleche, die das Gehäuse bei fehlenden Erweiterungskarten verschließen) entfernen, um die I/O-Anschlüsse des Grafikprozessors (HDMI*, DisplayPort*, DVI usw.) aufzunehmen und sie von außen zugänglich zu machen.</p>
+                <p>
+                    <img src="https://www.intel.de/content/dam/www/central-libraries/us/en/images/2023-01/s9-u05-29-install-gpu-original-rwd.jpg.rendition.intel.web.1920.1080.jpg" alt="Install-GPU" class="middle">
+                </p>
                 <p>Nehme die Grafikkarte aus ihrer antistatischen Verpackung und richte sie sorgfältig (sowohl an der hinteren Halterung als auch am Steckplatz selbst) aus. Drücke sie anschließend vorsichtig in den PCIe-x16-Steckplatz (dabei hörst du möglicherweise ein Klicken). Der PCIe-Clip auf dem Mainboard am Ende des Steckplatzes kann die Karte beim Einstecken verriegeln und muss im Falle, dass du die Grafikkarte umstecken musst, zuerst gelöst werden.</p>
+                <div class="image-comparison">
+                    <div class="images-container">
+                        <img class="before-image" src="https://www.intel.de/content/dam/www/central-libraries/us/en/images/2023-01/s9-u05-30-install-gpu-original-rwd.jpg.rendition.intel.web.1920.1080.jpg" alt="">
+                        <img class="after-image" src="https://www.intel.de/content/dam/www/central-libraries/us/en/images/2023-01/s9-u05-31-install-gpu-0589-screw-original-rwd.jpg.rendition.intel.web.1920.1080.jpg" alt="">
+
+                        <div class="slider-line"></div>
+                        <div class="slider-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                            </svg>
+                        </div>
+
+                        <input type="range" class="slider" min="0" max="100">
+                    </div>
+                </div>
                 <p>Nachdem der Grafikprozessor vollständig eingesetzt ist, wird er zur Sicherung mit ein oder zwei Schrauben (je nach Grafikkarte) an der Rückseite des Gehäuses befestigt. Falls dein Grafikprozessor einen zusätzlichen Stromanschluss benötigt, verbinde diesen mit dem Netzteil.</p>
 
                 <h2>SCHHRITT 9: Datenspeicher installieren</h2>
@@ -192,6 +245,9 @@
                 <p>Irgendwo im Gehäuse solltest du übereinander angeordnete Schächte in verschiedenen Größen finden. Eventuell sind sie mit kleinen Kunststoffwippen versehen – in diesem Fall können Laufwerke ohne Verschraubung eingeschoben und verriegelt werden (werkzeuglos) – oder sie sehen einfach wie Metallrahmen aus.</p>
                 <p>Massenspeicher werden im Allgemeinen in zwei Standardabmessungen angeboten – dem 2,5-Zoll-Format (HDDs und SSDs) und dem 3,5-Zoll-Format (HDDs). In den meisten 3,5-Zoll-Laufwerkschächten können auch 2,5-Zoll-Laufwerke eingebaut werden, aber nicht umgekehrt. (Zu einigen 3,5-Zoll-Schächten gehören Einbaurahmen, die zwar nicht für 2,5-Zoll-Laufwerke vorgesehen sind, die aber dennoch 2,5-Zoll-Laufwerke aufnehmen können.) Du kannst auch größere Schächte in deinem Gehäuse sehen – diese sind für größere Laufwerke wie optische Laufwerke und befinden sich normalerweise oben im Gehäuse an der Vorderseite.</p>
                 <p>Falls das Gehäuse Laufwerkschächte für die werkzeuglose Montage hat, befindet sich an jedem ein eigener Kunststoffhebel für die Verriegelung. Nachdem du den Hebel geöffnet bzw. entriegelt hast, solltest du den Einbaurahmen herausziehen können. Setze dein Laufwerk in den Rahmen ein. In einigen 3,5-Zoll-Rahmen können auch 2,5-Zoll-Laufwerke montiert werden. Falls dies möglich ist, musst du das 2,5-Zoll-Laufwerk am 3,5-Zoll-Einbaurahmen festschrauben, damit es nicht unkontrolliert verrutschen kann.</p>
+                <p>
+                    <img src="https://www.intel.de/content/dam/www/central-libraries/us/en/images/2023-01/s9-u05-32-install-storage-original-rwd.jpg.rendition.intel.web.1920.1080.jpg" alt="Install-Storage" class="middle">
+                </p>
                 <p>Schiebe den Einbaurahmen zurück in den Schacht. Er sollte mit einem hörbaren Klicken verriegelt werden, sobald er vollständig eingeschoben wurde.</p>
                 <p>Sollte es in deinem Gehäuse keine werkzeuglosen Laufwerkschächte geben, wirst du eine große Metallhalterung mit Winkeln (Schienen) und Löchern für die Verschraubung vorfinden. Um ein Laufwerk in einem solchen „Schacht“ einzubauen, musst du es nur zwischen die seitlichen Bleche schieben und festschrauben. Verwende dazu so viele Schrauben wie im Handbuch des Gehäuses angegeben. Falls du nicht die entsprechende Anzahl an Schrauben zur Verfügung hast, sollten für die meisten Laufwerke bereits zwei Verschraubungen ausreichen.</p>
                 <p>Wenn alle deine Laufwerke montiert sind, verbinde diese mit dem Mainboard (mit einem SATA-Kabel, das entweder mit dem Laufwerk oder dem Mainboard mitgeliefert worden ist) und mit dem Netzteil.</p>
