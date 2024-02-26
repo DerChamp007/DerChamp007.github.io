@@ -21,17 +21,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-const slider = document.querySelector(".image-comparison .slider");
-const beforeImage = document.querySelector(".image-comparison .before-image");
-const sliderLine = document.querySelector(".image-comparison .slider-line");
-const sliderIcon = document.querySelector(".image-comparison .slider-icon");
+const slider1 = document.querySelector("#image-comparison1 > .slider");
+const beforeImage1 = document.querySelector("#image-comparison1 > .before-image");
+const sliderLine1 = document.querySelector("#image-comparison1 > .slider-line");
+const sliderIcon1 = document.querySelector("#image-comparison1 > .slider-icon");
 
-slider.addEventListener("input", e =>{
+slider1.addEventListener("input", e =>{
     let sliderValue = e.target.value + "%";
 
-    beforeImage.style.width = sliderValue;
-    sliderLine.style.left = sliderValue;
-    sliderIcon.style.left = sliderValue;
+    beforeImage1.style.width = sliderValue;
+    sliderLine1.style.left = sliderValue;
+    sliderIcon1.style.left = sliderValue;
+});
+
+const slider2 = document.querySelector("#image-comparison2 > .slider");
+const beforeImage2 = document.querySelector("#image-comparison2 > .before-image");
+const sliderLine2 = document.querySelector("#image-comparison2 > .slider-line");
+const sliderIcon2 = document.querySelector("#image-comparison2 > .slider-icon");
+
+slider2.addEventListener("input", e =>{
+    let sliderValue = e.target.value + "%";
+
+    beforeImage2.style.width = sliderValue;
+    sliderLine2.style.left = sliderValue;
+    sliderIcon2.style.left = sliderValue;
+});
+
+const slider3 = document.querySelector("#image-comparison3 > .slider");
+const beforeImage3 = document.querySelector("#image-comparison3 > .before-image");
+const sliderLine3 = document.querySelector("#image-comparison3 > .slider-line");
+const sliderIcon3 = document.querySelector("#image-comparison3 > .slider-icon");
+
+slider3.addEventListener("input", e =>{
+    let sliderValue = e.target.value + "%";
+
+    beforeImage3.style.width = sliderValue;
+    sliderLine3.style.left = sliderValue;
+    sliderIcon3.style.left = sliderValue;
 });
 
 
@@ -55,5 +81,3 @@ function showSlides(n) {
 }
 document.querySelector('.prev').addEventListener('click', () => plusSlides(-1));
 document.querySelector('.next').addEventListener('click', () => plusSlides(1));
-
-
