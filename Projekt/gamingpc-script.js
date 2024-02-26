@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     links.forEach(link => {
         link.addEventListener('click', (event) => {
-            event.preventDefault(); // Verhindert, dass der Browser standardmäßig zum Anker springt
+            event.preventDefault(); 
 
-            const targetId = link.getAttribute('href').substring(1); // Entferne das # Zeichen
+            const targetId = link.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
 
             if (targetSection) {

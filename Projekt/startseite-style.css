@@ -6,6 +6,8 @@ body {
     width: 50%;
     margin: 0 auto;
     text-align: center;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
 }
 
 h1 {
