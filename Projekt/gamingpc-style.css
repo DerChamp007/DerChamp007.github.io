@@ -3,6 +3,7 @@ body {
     color: white;
     font-family: "Courier New", Courier, monospace;
     text-align: center;
+    font-size: 16px;
 }
 
 nav {
@@ -88,6 +89,7 @@ nav ul li a:hover {
     top: 7%;
     width: 70%;
     margin: 0 auto;
+
 }
 
 .text, .step {
@@ -98,6 +100,7 @@ nav ul li a:hover {
 
 img{
     width: 300px;
+    max-width: 100%;
     height: auto;
 }
 
@@ -202,4 +205,20 @@ button {
 
 .next {
     right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .image {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1100px;
+    }
 }
