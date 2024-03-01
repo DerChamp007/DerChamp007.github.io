@@ -10,10 +10,16 @@
 <nav>
     <ul>
         <li class="dropdown1">
-            <a href="startseite.html">Startseite</a>
+            <a id="startseite" href="startseite.html">Startseite</a>
+            <script>
+                document.getElementById("startseite").addEventListener("click",() =>
+                {
+                    window.location.href = "startseite.html"
+                })
+            </script>
             <div class="dropdown-content1">
-                <a href="#">Evolution von Computerspielen</a>
-                <a href="#">Auswirkungen auf die Gesellschaft</a>
+                <a href="auswirkungen.html">Auswirkungen auf die Gesellschaft</a>
+                <a href="kontaktseite.html">Kontakt</a>
             </div>
         </li>
         <li class="dropdown">
