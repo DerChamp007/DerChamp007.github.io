@@ -130,11 +130,70 @@
         <p>2005 produzierten AMD und Intel erste Dual-Core-Prozessoren, 2006 doppelte Intel mit den ersten Core-2-Quad-Prozessoren nach – AMD konnte erst 2007 erste Vierkernprozessoren vorstellen. Bis zum Jahr 2010 stellten mehrere Firmen auch Sechs- und Achtkernprozessoren vor. Entwicklungen wie Mehrkernprozessoren, Berechnung auf Grafikprozessoren (GPGPU) sowie der breite Einsatz von Tablet-Computern dominieren in den letzten Jahren (Stand 2012) das Geschehen.</p>
         <p>Seit den 1980er Jahren stiegen die Taktfrequenzen von anfangs wenigen MHz bis zuletzt (Stand 2015) etwa 4 GHz. In den letzten Jahren konnte der Takt nur noch wenig gesteigert werden, stattdessen wurden Steigerungen der Rechenleistung eher durch mehr Prozessorkerne und vergrößerte Busbreiten erzielt. Auch wenn durch Übertaktung einzelne Prozessoren auf über 8 GHz betrieben werden konnten, sind diese Taktraten auch 2015 noch nicht in Serienprozessoren verfügbar. Außerdem werden zunehmend auch die in Computern verbauten Grafikprozessoren zur Erhöhung der Rechenleistung für spezielle Aufgaben genutzt (z. B. per OpenCL, siehe auch Streamprozessor und GPGPU).</p>
         <p>Seit ca. 2005 spielen auch Umweltaspekte (wie z. B. Stromsparfunktionen von Prozessor und Chipsatz, verringerter Einsatz schädlicher Stoffe) – bei der Produktion, Beschaffung und Nutzung von Computern zunehmend eine Rolle (siehe auch Green IT).</p>
+        <br><br><br><br>
+        <p> Hier können Sie jetzt die neueste Innovation ausprobieren und zwar den Chatbot. Geben Sie egal was in die Leiste ein und Sie bekommen eine Antwort einerhalb von Sekunden.</p>
     </div>
 
-        <div class="iframe-container">
-            <iframe src="https://derchamp007.github.io/folder/fakeseite2.0.html" ></iframe>
-        </div>
+    <div class="search-container">
+            <form id="chat-wrapper">
+                <ul id="chat-messages"></ul>
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button type="submit">Send</button>
+            </form>
+    </div>
+    <script>
+        document.getElementById("chat-wrapper").addEventListener("submit",(e) => {
+        e.preventDefault();
+            const myHeaders = new Headers();
+            myHeaders.append("authority", "chatbot-ji1z.onrender.com");
+            myHeaders.append("accept", "application/json");
+            myHeaders.append("accept-language", "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7,la;q=0.6");
+            myHeaders.append("cache-control", "no-cache");
+            myHeaders.append("content-type", "application/json");
+            myHeaders.append("pragma", "no-cache");
+            myHeaders.append("sec-ch-ua", "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"");
+            myHeaders.append("sec-ch-ua-mobile", "?0");
+            myHeaders.append("sec-ch-ua-platform", "\"macOS\"");
+            myHeaders.append("sec-fetch-dest", "empty");
+            myHeaders.append("sec-fetch-mode", "cors");
+            myHeaders.append("sec-fetch-site", "cross-site");
+            myHeaders.append("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36");
+
+            const input = document.getElementById("chat-input");
+
+            const raw = JSON.stringify({
+                "messages": [
+                    {
+                        "role": "user",
+                        "content": input.value
+                    }
+                ]
+            });
+            input.value = "";
+
+            const requestOptions = {
+                method: "POST",
+                headers: myHeaders,
+                body: raw,
+                redirect: "follow"
+            };
+
+            const chat = document.getElementById("chat-messages");
+            let res;
+            fetch("https://chatbot-ji1z.onrender.com/chatbot-ji1z", requestOptions)
+                .then((response) => response.json())
+                .then((result) => {
+                    res=result.choices[0].message.content;
+                    const node = document.createElement("li");
+                    const text = document.createTextNode(res);
+                    node.appendChild(text);
+                    chat.appendChild(node);
+                })
+                .catch((error) => console.error(error));
+
+
+        })
+    </script>
     <br>
     <footer>
         <p>© 2024, Erstellt von DerChamp007(Randip Singh)</p>

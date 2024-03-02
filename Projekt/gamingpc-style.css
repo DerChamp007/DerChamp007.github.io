@@ -49,6 +49,9 @@ nav ul li a:hover {
 .dropdown1 {
     position: relative;
 }
+.dropdown1 >a {
+    z-index: 5;
+}
 
 .dropdown-content1 {
     display: none;

@@ -1,7 +1,9 @@
 body {
     background-color: black;
     font-size: 16px;
+    margin:0;
 }
+
 
 .image{
     float: right;
@@ -66,6 +68,47 @@ body {
     background-color: white;
 }
 
+.search-container {
+    display: flex;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#chat-messages > *{
+    color: white;
+}
+
 h1 {
     font-size: 43px;
     font-family: "Courier New", Courier, monospace;
@@ -83,13 +126,11 @@ footer {
 }
 
 nav {
-   position:fixed ;
-   top: 3.4%;
-   transform: translateY(-50%);
+   position:sticky ;
+    top:0;
    width: 100%;
    background-color: #333;
    z-index: 1000;
-   padding: 10px 0;
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
    text-align: center;
 }
